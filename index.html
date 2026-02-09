@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Hangman Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="join-screen" class="screen">
+        <h1>Welcome to Multiplayer Hangman!</h1>
+        <input type="text" id="username" placeholder="Enter your username" />
+        <button id="join-button">Join Game</button>
+    </div>
+
+    <div id="game-screen" class="screen" style="display: none;">
+        <h1>Game Screen</h1>
+        <p id="word-to-guess">Word: _ _ _ _ _</p>
+        <input type="text" id="letter-input" maxlength="1" placeholder="Guess a letter" />
+        <button id="guess-button">Guess</button>
+        <p id="guesses">Guessed Letters: </p>
+        <p id="remaining-attempts">Remaining Attempts: 6</p>
+    </div>
+
+    <div id="end-game-screen" class="screen" style="display: none;">
+        <h1>Game Over!</h1>
+        <p id="result-message">You Win!</p>
+        <button id="restart-button">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
